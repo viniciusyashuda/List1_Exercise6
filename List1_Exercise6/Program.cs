@@ -7,7 +7,7 @@ namespace List1_Exercise6
         static void Main(string[] args)
         {
 
-            int stop, ant1 = 1, result = 0, ant2;
+            int stop, previous1 = 1, result = 0, previous2;
 
             Console.Write("Enter a stop number: ");
             stop = int.Parse(Console.ReadLine());
@@ -25,9 +25,9 @@ namespace List1_Exercise6
                 else
                 {
 
-                    ant2 = result;
-                    result = ant1 + ant2;
-                    ant1 = ant2;
+                    previous2 = result;
+                    result = previous1 + previous2;
+                    previous1 = previous2;
                     Console.WriteLine(result);
 
                 }
